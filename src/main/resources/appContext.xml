@@ -12,8 +12,10 @@
 			http://www.springframework.org/schema/lang 
 			http://www.springframework.org/schema/lang/spring-lang-3.1.xsd">
 
-	<context:component-scan base-package="tr.com.tse"/>
+	<import resource="classpath*:s4v-context.xml"/>
+	
+	<context:component-scan base-package="com.vaadin.s4v.demo"/>
      
 	<context:annotation-config/>
-   
+
 </beans>

@@ -1,9 +1,3 @@
-package com.vaadin.s4v.demo;
-
-import javax.servlet.annotation.WebServlet;
-
-import com.vaadin.annotations.Theme;
-import com.vaadin.annotations.VaadinServletConfiguration;
 /*
  * Copyright 2002-2014 the original author or authors.
  *
@@ -20,6 +14,14 @@ import com.vaadin.annotations.VaadinServletConfiguration;
  * limitations under the License.
  */
 
+package com.vaadin.s4v.demo;
+
+import javax.servlet.annotation.WebServlet;
+
+import com.vaadin.annotations.Theme;
+import com.vaadin.annotations.VaadinServletConfiguration;
+
+
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
 import com.vaadin.ui.UI;
@@ -35,7 +37,7 @@ import com.vaadin.ui.UI;
 @SuppressWarnings("serial")
 public class DemoUI extends UI {
 
-    @WebServlet(value = "/*", asyncSupported = true)
+	@WebServlet(value = "/*", asyncSupported = true)
     @VaadinServletConfiguration(productionMode = false, ui = DemoUI.class, widgetset = "com.vaadin.s4v.demo.AppWidgetSet")
     public static class Servlet extends VaadinServlet {
     	
